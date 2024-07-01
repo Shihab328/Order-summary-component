@@ -1,0 +1,170 @@
+:root{
+    --primary:"Red Hat Display", sans-serif;
+    
+    
+    --Paleblue: hwb(225 88% 0% / 0.342);
+    --Brightblue: hsl(245, 90%, 55%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+    
+    }
+    * , ::after, ::before{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    html, body{
+        height: 100%;
+        width: auto;
+    }
+    /* main background */
+    body{
+        background-image: url(images/pattern-background-desktop.svg);
+        font-size: 16px;
+        font-family: var(--primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* semi background */
+    .card{
+    width:440px;
+    height:630px;
+    background:white;
+    background-repeat: none;
+    border-radius: 10px;
+    display: flex;
+   align-items: top;
+   justify-content:top;
+   flex-direction: column;
+   box-shadow: 0 2px 15px var(--Desaturatedblue);
+    }
+    img{width: 100%;
+    height: auto;
+    }
+   
+    .card-img img{
+        border-radius: 10px 10px 0 0;
+    }
+    .card-body{
+        flex-basis: 50%;
+        text-align: center;
+    }
+    /* music icon */
+    .icon{
+        width: 80%;
+        padding:3%;
+        background: var(--Paleblue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        border-radius: 5px;
+    
+    }
+    /* Proceed to Payment */
+    button{
+        font-family: var(--primary);
+        font-weight: 800;
+        font-size: 100%;
+        box-shadow: 0 10px 10px hsla(245, 85%, 55%, 0.224);
+        background: var(--Brightblue);
+        border: 1px solid var(--Brightblue);
+        width: 80%;
+        border-radius:6px;
+        padding:2.5%;
+        margin-top: 5%;
+        margin-bottom:6%;
+        color:white;
+        
+    }
+    /* music icon image */
+    .icon img{
+        width:15%;
+        height: auto;
+        margin-right:5%;
+    }
+    /* You can now listen.... */
+    .title{
+        font-size:100%;
+        font-family: var(--primary);
+        font-weight: 500;
+        color: var(--Desaturatedblue);
+        margin:5% 10%;
+    }
+    /* Annual Plan */
+    .text{
+        font-size:100%;
+        font-weight: 900;
+        font-family: var(--primary);
+        margin-bottom: 4%;
+
+    }
+    /* $59.99/year */
+    .texts{
+        font-size: 100%;
+        font-family: var(--primary);
+        font-weight:600;
+        color:var(--Desaturatedblue);
+    }
+    /* change button */
+    a.link{ 
+        text-decoration: none;
+        font-size: 90%;
+        font-family:var(--primary);
+        font-weight: 700;
+        margin-left: 25%;}
+    /* Order Summary */
+    .h3{
+        font-size:150%;
+        margin-top:10%;
+        font-weight:900;
+        font-family: var(--primary);
+
+    } 
+    /* Cancel Order */
+.cl a{
+        text-decoration: none;
+        font-family: var(--primary);
+        font-size: 100%;
+        font-weight: 900;
+        color: var(--Desaturatedblue);
+    }
+    .cl:active{
+        text-decoration: underline 1px var(--Desaturatedblue);
+
+    }
+  a.link:active{
+    color: rgb(153, 67, 229);
+    text-decoration: underline 1px rgb(153, 67, 229);
+  }
+
+
+
+  /* mobile screen */
+  @media only screen and (max-width:450px){
+    body{width: 100%;
+        height: 100%;
+       
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .card{
+        width:350px;
+        height:550px;
+       
+
+    }
+    .text{
+        font-size:85%;
+  } 
+  .texts{
+        font-size: 85;}
+    a.link{ 
+        font-size: 80%;
+}}
